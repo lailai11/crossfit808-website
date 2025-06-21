@@ -1,158 +1,70 @@
-# CrossFit 808 Website Development Roadmap
+# Getting Started with Create React App
 
-This document outlines a comprehensive step-by-step plan to build, secure, and launch the CrossFit808 website, with a future-ready foundation for mobile app and e-commerce integration.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
----
+## Available Scripts
 
-## Phase 1: Foundation & Local Development
+In the project directory, you can run:
 
-**Objective:** Establish the core structure and environment for development.
+### `npm start`
 
-### Project Initialization & Code Retrieval
-- **Action:** Clone the GitHub repository (`crossfit808-website`) to local machine.
-- **Technology:** Git, GitHub
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-### Local Development Environment Setup
-- **Action:** Install Node.js (includes npm).
-- **Technology:** Node.js, npm (or Yarn)
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-### Install Project Dependencies
-- **Action:** Install necessary packages for React.
-- **Technology:** 
-  - React  
-  - Tailwind CSS  
-  - Firebase SDK  
-  - Lucide React (icons)  
+### `npm test`
 
-### Local Firebase Integration
-- **Action:** Paste `firebaseConfig` object into `src/App.js` for local use.
-- **Technology:** Firebase
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### Start Local Server
-- **Action:** Run development server to view the site.
-- **Technology:** `npm start`
+### `npm run build`
 
----
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## Phase 2: Core Website & Content Management
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-**Objective:** Build the website UI and implement content management tools for the gym owner.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### Core Website Structure & Design
-- **Action:** Build out pages:  
-  - Home  
-  - About Us  
-  - Programs  
-  - Schedule  
-  - Coaches  
-  - Testimonials  
-  - Contact  
-- **Technology:** React, Tailwind CSS, HTML/CSS
+### `npm run eject`
 
-**Note:** Branding with baby blue, black, and grey for a fresh and unique identity.
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-### Dynamic Blog Section
-- **Action:** Admin interface to add/edit/delete blog posts; display publicly.
-- **Technology:** Firebase Firestore, React
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-### Dynamic WOD (Workout of the Day)
-- **Action:** Schedule and auto-display WODs by date; admin control.
-- **Technology:** Firebase Firestore, React
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-### Online Store (Placeholder)
-- **Action:** Create store section with placeholder button.
-- **Technology:** React, HTML/CSS
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-### PushPress Integration
-- **Action:** Add CTA button to link to PushPress calendar.
-- **Technology:** React, External Link (modal optional)
+## Learn More
 
----
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-## Phase 3: Deployment & Production Readiness
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-**Objective:** Optimize the site, secure it, and deploy for public access.
+### Code Splitting
 
-### Build for Production
-- **Action:** Optimize React app.
-- **Technology:** `npm run build`, Webpack
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Firebase Authentication for Owner
-- **Action:** Replace anonymous login with secure owner login.
-- **Technology:** Firebase Auth (Email/Password)
+### Analyzing the Bundle Size
 
-### Firebase Firestore Security Rules
-- **Action:** Restrict write access to authenticated owner UID.
-- **Technology:** Firebase Security Rules
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Secure Hosting with AWS
-- **Action:** Deploy app as static website.
-- **Technology:** AWS S3
+### Making a Progressive Web App
 
-### HTTPS & CDN
-- **Action:** Use CloudFront with SSL for secure, fast delivery.
-- **Technology:** AWS CloudFront, AWS Certificate Manager (ACM)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### DNS Configuration
-- **Action:** Point `crossfit808.com` to CloudFront.
-- **Technology:** AWS Route 53
+### Advanced Configuration
 
-### Environment Variables
-- **Action:** Store API keys securely and load via environment variables.
-- **Technology:** AWS Amplify, Netlify, or Vercel
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
----
+### Deployment
 
-## Phase 4: Advanced Features & Maintenance
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-**Objective:** Add advanced capabilities and prepare for long-term sustainability.
+### `npm run build` fails to minify
 
-### Full Online Store Integration
-- **Action:** Connect to full e-commerce platform.
-- **Technology:** Shopify, WooCommerce, or custom API
-
-### Member Score Tracking App (Future Project)
-- **Action:** Allow members to log WOD scores.
-- **Technology:**  
-  - React Native (Mobile) or React (Web)  
-  - Firebase Auth  
-  - Firebase Firestore  
-
-### Rich Text Editor for Admin
-- **Action:** Enable formatting in WOD/blog editor.
-- **Technology:** TinyMCE, Quill, or Slate.js
-
-### SEO Optimization
-- **Action:** Improve visibility in search engines.
-- **Technology:** React Helmet, Google Search Console
-
-### Performance & Monitoring
-- **Action:** Monitor load times and user behavior.
-- **Technology:** Google Analytics, Lighthouse
-
-### Ongoing Content Updates
-- **Action:** Gym owner updates WODs and blog content regularly.
-
----
-
-## Security First
-
-- HTTPS via AWS Certificate Manager  
-- Firebase Auth & Role-based Firestore rules  
-- Static hosting (no exposed backend)  
-- CDN for global performance and DDoS protection
-
----
-
-## Tech Stack Summary
-
-| Frontend       | Backend / CMS       | Hosting & Security       | Third-Party Tools      |
-|----------------|---------------------|---------------------------|-------------------------|
-| React          | Firebase Firestore   | AWS S3, CloudFront, ACM   | PushPress               |
-| Tailwind CSS   | Firebase Auth        | AWS Route 53              | Google Analytics        |
-| Lucide React   | Firebase Security    | Environment Variables     | React Helmet            |
-
----
-
-**Maintainer:** [Rachel Lai](https://github.com/yourusername)  
-**Domain:** [https://crossfit808.com](https://crossfit808.com)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
