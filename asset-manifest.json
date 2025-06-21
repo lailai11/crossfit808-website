@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/lailai11/crossfit808-website.git/static/css/main.3b1f2b08.css",
+    "main.js": "/lailai11/crossfit808-website.git/static/js/main.1d684902.js",
+    "static/js/453.7e803549.chunk.js": "/lailai11/crossfit808-website.git/static/js/453.7e803549.chunk.js",
+    "index.html": "/lailai11/crossfit808-website.git/index.html",
+    "main.3b1f2b08.css.map": "/lailai11/crossfit808-website.git/static/css/main.3b1f2b08.css.map",
+    "main.1d684902.js.map": "/lailai11/crossfit808-website.git/static/js/main.1d684902.js.map",
+    "453.7e803549.chunk.js.map": "/lailai11/crossfit808-website.git/static/js/453.7e803549.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3b1f2b08.css",
+    "static/js/main.1d684902.js"
+  ]
+}
